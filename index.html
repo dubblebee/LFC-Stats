@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>LFC Season Comparison</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link href='http://fonts.googleapis.com/css?family=Roboto:100,400,700,500' rel='stylesheet' type='text/css'>
+		<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script src="js/highcharts.js"></script>
+		<script src="js/lfc-high-16-17.js"></script>
+	</head>
+
+	<body>
+
+	<div class="wrapper">
+		<div name="top" class="header">
+			<img src="img/lfc-logo.png">
+			<h1>Liverpool FC Season Comparison</h1>
+			<h2>A brief comparison of Jürgen Klopp's 2016/17 LFC side against Brendan Rodgers' 2013/14 Suarez-inspired title challengers.</h2>
+		</div>
+		
+		<div class="heroImg">
+			<img src="img/2013-14.jpg" class="left">
+			<img src="img/2016-17.jpg" class="right">
+		</div>
+
+		<div class="nav">
+			<ul>
+				<li><a href="#pts">Points per game</a></li>
+				<li><a href="#pts-ttl">Aggregate points</a></li>
+				<li><a href="#goals">Goals per game</a></li>
+				<li><a href="#goals-ttl">Aggregate goals</a></li>
+				<li><a href="#wld">Win, Lose or Draw</a></li>
+			</ul>
+		</div>
+
+		<div class="chart-con">
+			<div name="pts" id="pts" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+		</div>
+
+		<div class="chart-con">
+			<div name="pts-ttl" id="pts-ttl" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+		</div>
+
+		<div class="chart-con">
+			<div name="goals" id="goals" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+		</div>
+
+		<div class="chart-con">
+			<div name="goals-ttl" id="goals-ttl" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+		</div>
+
+		<div name="wld" class="donuts">
+			<!-- <a name="wld"></a> --><h2>Win, Lose or Draw</h2>
+			<div class="left" id="wld-13-14" style="min-width: 250px; height: 300px; margin: 0 auto"></div>
+			<div class="right" id="wld-16-17" style="min-width: 250px; height: 300px; margin: 0 auto"></div>
+		</div>
+
+		<a href="#" id="goTop" class="go-top"><i class="fa fa-arrow-circle-up"></i><span class="link-text">Top</span></a>
+
+		<div class="footer">
+			<ul>
+				<li><a href="#pts">Points per game</a></li>
+				<li><a href="#pts-ttl">Aggregate points</a></li>
+				<li><a href="#goals">Goals per game</a></li>
+				<li><a href="#goals-ttl">Aggregate goals</a></li>
+				<li><a href="#wld">Win, Lose or Draw</a></li>
+			</ul>
+		</div>
+
+	</div>
+	
+
+
+	<script type="text/javascript">
+		$(function() {
+		  $('a[href*="#"]:not([href="#"])').click(function() {
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      if (target.length) {
+		        $('html, body').animate({
+		          scrollTop: target.offset().top
+		        }, 1000);
+		        return false;
+		      }
+		    }
+		  });
+		});
+
+		// Show or hide the sticky footer button
+	    $(window).scroll(function() {
+	        if ($(this).scrollTop() > 200) {
+	            $('.go-top').fadeIn(200);
+	        } else {
+	            $('.go-top').fadeOut(200);
+	        }
+	    });
+	    
+	    // Animate the scroll to top
+	    $('.go-top').click(function(event) {
+	        event.preventDefault();
+	        
+	        $('html, body').animate({scrollTop: 0}, 300);
+	    })
+
+
+	</script>
+
+	</body>
+
+</html>
+

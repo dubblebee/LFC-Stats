@@ -1,0 +1,171 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.1.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.1.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.1.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background: #eee;
+	margin: 0 auto;
+}
+
+h1 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 48px;
+	text-transform: uppercase;
+	line-height: 64px;
+	margin-bottom: -20px;
+}
+
+h2 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	font-size: 24px;
+	text-transform: ;
+	line-height: 36px;
+	text-align: center;	
+}
+
+a {
+	color: firebrick;
+	text-decoration: none;
+	padding: 5px;
+	border-radius: 3px;
+	border: 1px solid #eee;
+}
+
+a:hover {
+	background-color: firebrick;
+	color: white;
+	border:1px solid firebrick;
+}
+
+.wrapper {
+	margin: 0px auto;
+	padding: 0 30px;
+	position: relative;
+	width: 90%;
+	background: #fbfbfb;
+	-webkit-box-shadow: 0px 5px 15px 0px rgba(50, 50, 50, 0.5);
+	   -moz-box-shadow: 0px 5px 15px 0px rgba(50, 50, 50, 0.5);
+		    box-shadow: 0px 5px 15px 0px rgba(50, 50, 50, 0.5);
+}
+
+.header {
+	margin: 0 auto 30px;
+	display: block;
+	width: 50%;
+	text-align: center;
+}
+
+.heroImg {
+	margin: 0 auto;
+	height: 250px;
+	width: 90%;
+	overflow: hidden;
+	margin-bottom: 60px;	
+}
+
+.left {
+	background: ;
+	position: relative;
+	float: left;
+	display: block;
+	width: 50%;
+}
+
+.center {
+	width: 33.33%;
+}
+
+.right {
+	background: ;
+	position: relative;
+	float: right;
+	display: block;
+	width: 50%;
+}
+
+.footer {
+	min-height: 50px;
+}
+
+.nav, .footer {
+	position: relative;
+	width: 100%;
+	margin: 60px 0;
+}
+
+.nav ul, .footer ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;	
+	text-align: center;
+}
+
+.nav li, .footer li {
+	display: inline;
+	margin-right: 30px;
+}
+
+.donuts {
+	background-color: white;
+	width: 100%;
+	display: block;
+	min-height: 400px;
+}
+
+.donuts h2 {
+	font-weight: 400;
+}
+
+.chart-con {
+    margin-bottom: 150px;
+}
+
+.top-btn {
+	float: right;
+	margin-top: 10px;
+}
+
+
+#pts, #pts-ttl, #goals, #goals-ttl, .donuts {
+    border: 1px solid #e3e3e3;
+}
+
+#pts:hover, #pts-ttl:hover, #goals:hover, #goals-ttl:hover, .donuts:hover {
+    border: 1px solid #f78c8c;
+    box-shadow: 2px 2px 15px #e4e4e4;
+    transition: 0.25s;
+    transform: translateY(-2px);
+}
+
+#goTop {
+	position: fixed;
+	bottom: 5em; 
+	right: 2em;
+	text-decoration: none;
+	color: #fff;
+	background: rgba(204,40,40,0.8);
+	padding: 10px 12px;
+	border-radius: 3px;
+	display: none;
+	z-index: 10;
+	border: none;
+}
+#goTop:hover {
+	background: rgba(226,64,64,0.8);
+	border: none;
+	}
+
+.link-text {
+	font-family: 'Roboto', sans-serif;
+	color: #fff;
+	padding-left: 5px;
+}
+
+
