@@ -48,7 +48,7 @@ $(function () {
         }, {
             type: 'column',
             name: '2016-17',
-            data: [3, 0, 1, 3, 3, 3, 3, 1, 3, 3, 3, 1, 3, 0, 1, 3]
+            data: [3, 0, 1, 3, 3, 3, 3, 1, 3, 3, 3, 1, 3, 0, 1, 3, 3, 3, 3, 1]
         }]
     });
 
@@ -91,7 +91,7 @@ $(function () {
         }, {
             type: 'column',
             name: '2016-17',
-            data: [3, 3, 4, 7, 10, 13, 16, 17, 20, 23, 26, 27, 30, 30, 31, 34]
+            data: [3, 3, 4, 7, 10, 13, 16, 17, 20, 23, 26, 27, 30, 30, 31, 34, 37, 40, 43, 44]
         }, {
             type: 'pie',
             name: 'Total Pts',
@@ -101,7 +101,7 @@ $(function () {
                 //, color: Highcharts.getOptions().colors[0] // 2013-14's color
             }, {
                 name: '2016-17',
-                y: 34
+                y: 44
                 //, color: Highcharts.getOptions().colors[8] // 2014-15's color
             }],
             center: [170, -10],
@@ -152,7 +152,7 @@ $(function () {
         }, {
             type: 'column',
             name: '2016-17',
-            data: [4, 0, 1, 4, 2, 5, 2, 0, 2, 4, 6, 0, 2, 3, 2, 3]
+            data: [4, 0, 1, 4, 2, 5, 2, 0, 2, 4, 6, 0, 2, 3, 2, 3, 1, 4, 1, 2]
         },
         {
             type: 'pie',
@@ -163,7 +163,7 @@ $(function () {
                 //, color: Highcharts.getOptions().colors[0] // 2013-14's color
             }, {
                 name: '2016-17',
-                y: 40
+                y: 48
                 //, color: Highcharts.getOptions().colors[8] // 2014-15's color
             }],
             center: [170, 20],
@@ -214,7 +214,7 @@ $(function () {
         }, {
             type: 'column',
             name: '2016-17',
-            data: [4, 4, 5, 9, 11, 16, 18, 18, 20, 24, 30, 30, 32, 35, 37, 40]
+            data: [4, 4, 5, 9, 11, 16, 18, 18, 20, 24, 30, 30, 32, 35, 37, 40, 41, 45, 46, 48]
         }, {
             type: 'pie',
             name: 'Total Goals',
@@ -224,7 +224,7 @@ $(function () {
                 //, color: Highcharts.getOptions().colors[0] // 2013-14's color
             }, {
                 name: '2016-17',
-                y: 40
+                y: 48
                 //, color: Highcharts.getOptions().colors[8] // 2014-15's color
             }],
             center: [170, -10],
@@ -275,9 +275,9 @@ $(function () {
             name: 'Win, Lose or Draw',
             innerSize: '50%',
             data: [
-                ['Won', 10],
+                ['Won', 13],
                 ['Lost', 2],
-                ['Drew', 4]
+                ['Drew', 5]
             ]
         }]
     });
