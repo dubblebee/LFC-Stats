@@ -30,7 +30,7 @@ h2 {
 	text-align: center;	
 }
 
-a {
+/*a {
 	color: firebrick;
 	text-decoration: none;
 	padding: 5px;
@@ -42,7 +42,7 @@ a:hover {
 	background-color: firebrick;
 	color: white;
 	border:1px solid firebrick;
-}
+}*/
 
 .wrapper {
 	margin: 0px auto;
@@ -117,9 +117,10 @@ a:hover {
 	width: 100%;
 	display: block;
 	min-height: 400px;
+	margin-bottom: 120px;
 }
 
-.donuts h2 {
+.donuts h2, .results h2 {
 	font-weight: 400;
 }
 
@@ -127,17 +128,85 @@ a:hover {
     margin-bottom: 150px;
 }
 
+/*Results Table*/
+
+.results {
+	background-color: white;
+	width: 100%;
+	display: block;
+	min-height: 400px;
+}
+
+th.resTeam {
+  	/* Something you can count on */
+  	height: 120px;
+  	white-space: nowrap;
+}
+
+th.resTeam > div {
+  	transform: 
+    	/* Magic Numbers */
+    	translate(25px, 51px)
+    	rotate(-90deg);
+  	width: 18px;
+  	font-size: 0.6em;
+  	font-weight: normal;
+  	left: -25px;
+  	position: relative;
+}
+
+th.resTeam > div > span {
+    display: inline-block;
+    background-color: #ddd;
+    padding: 5px 5px;
+    min-width: 40px;
+}
+
+.results tr {
+	/*background-color: #eee;	*/
+}
+
+.resRow td {
+	text-align: center;
+	padding: 3px 5px;
+	color: white;
+	font-size: 0.5em;
+	min-width: 8px;
+}
+
+.resRow td:hover {
+	opacity: 85%: 
+}
+
+.resSeason{
+	background-color: black;
+	font-size: 10px !important ;
+}
+
+.w {
+	background-color: green;
+}
+
+.d {
+	background-color: gray;
+}
+
+.l {
+	background-color: firebrick;
+}
+
+
 .top-btn {
 	float: right;
 	margin-top: 10px;
 }
 
 
-#pts, #pts-ttl, #goals, #goals-ttl, .donuts {
+#pts, #pts-ttl, #goals, #goals-ttl, .donuts, .results {
     border: 1px solid #e3e3e3;
 }
 
-#pts:hover, #pts-ttl:hover, #goals:hover, #goals-ttl:hover, .donuts:hover {
+#pts:hover, #pts-ttl:hover, #goals:hover, #goals-ttl:hover, .donuts:hover, .results:hover {
     border: 1px solid #f78c8c;
     box-shadow: 2px 2px 15px #e4e4e4;
     transition: 0.25s;
