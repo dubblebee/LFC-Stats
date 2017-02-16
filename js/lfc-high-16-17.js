@@ -48,7 +48,7 @@ $(function () {
         }, {
             type: 'column',
             name: '2016-17',
-            data: [3, 0, 1, 3, 3, 3, 3, 1, 3, 3, 3, 1, 3, 0, 1, 3, 3, 3, 3, 1, 1]
+            data: [3, 0, 1, 3, 3, 3, 3, 1, 3, 3, 3, 1, 3, 0, 1, 3, 3, 3, 3, 1, 1, 0, 1, 0, 3]
         }]
     });
 
@@ -91,7 +91,7 @@ $(function () {
         }, {
             type: 'column',
             name: '2016-17',
-            data: [3, 3, 4, 7, 10, 13, 16, 17, 20, 23, 26, 27, 30, 30, 31, 34, 37, 40, 43, 44, 45]
+            data: [3, 3, 4, 7, 10, 13, 16, 17, 20, 23, 26, 27, 30, 30, 31, 34, 37, 40, 43, 44, 45, 45, 46, 46, 49]
         }, {
             type: 'pie',
             name: 'Total Pts',
@@ -101,7 +101,7 @@ $(function () {
                 //, color: Highcharts.getOptions().colors[0] // 2013-14's color
             }, {
                 name: '2016-17',
-                y: 45
+                y: 49
                 //, color: Highcharts.getOptions().colors[8] // 2014-15's color
             }],
             center: [170, -10],
@@ -152,7 +152,7 @@ $(function () {
         }, {
             type: 'column',
             name: '2016-17',
-            data: [4, 0, 1, 4, 2, 5, 2, 0, 2, 4, 6, 0, 2, 3, 2, 3, 1, 4, 1, 2, 1]
+            data: [4, 0, 1, 4, 2, 5, 2, 0, 2, 4, 6, 0, 2, 3, 2, 3, 1, 4, 1, 2, 1, 2, 1, 0, 2]
         },
         {
             type: 'pie',
@@ -163,7 +163,7 @@ $(function () {
                 //, color: Highcharts.getOptions().colors[0] // 2013-14's color
             }, {
                 name: '2016-17',
-                y: 49
+                y: 54
                 //, color: Highcharts.getOptions().colors[8] // 2014-15's color
             }],
             center: [170, 20],
@@ -214,7 +214,7 @@ $(function () {
         }, {
             type: 'column',
             name: '2016-17',
-            data: [4, 4, 5, 9, 11, 16, 18, 18, 20, 24, 30, 30, 32, 35, 37, 40, 41, 45, 46, 48, 49]
+            data: [4, 4, 5, 9, 11, 16, 18, 18, 20, 24, 30, 30, 32, 35, 37, 40, 41, 45, 46, 48, 49, 51, 52, 52, 54]
         }, {
             type: 'pie',
             name: 'Total Goals',
@@ -224,7 +224,7 @@ $(function () {
                 //, color: Highcharts.getOptions().colors[0] // 2013-14's color
             }, {
                 name: '2016-17',
-                y: 49
+                y: 54
                 //, color: Highcharts.getOptions().colors[8] // 2014-15's color
             }],
             center: [170, -10],
@@ -275,9 +275,9 @@ $(function () {
             name: 'Win, Lose or Draw',
             innerSize: '50%',
             data: [
-                ['Won', 13],
-                ['Lost', 2],
-                ['Drew', 6]
+                ['Won', 14],
+                ['Lost', 4],
+                ['Drew', 7]
             ]
         }]
     });
@@ -324,6 +324,46 @@ $(function () {
             ]
         }]
     });
+
+   //Top scorers
+
+    $('#plr-goals').highcharts({
+        colors: ['#D3171E'],
+        title: {
+            text: '<h2>Top scorers</h2>',
+            style: {
+                fontFamily: 'Roboto',
+                fontSize: 24
+            }
+        },
+        xAxis: {
+            labels: {
+                rotation: -45,
+            },
+            categories: ['Sadio Mané', 'Roberto Firmino', 'Adam Lallana', 'James Milner', 'Philippe Coutinho', 'Divock Origi', 'Emre Can', 'Georginio Wijnaldum', 'Daniel Sturridge', 'Dejan Lovren', 'Jordan Henderson', 'Joel Matip']
+        },
+        yAxis: {
+            title: {
+                text: 'PL Goals'
+            },
+            //max: 25
+        },        
+        labels: {
+            items: [{
+                html: '',
+                style: {
+                    left: '50px',
+                    top: '-30px',
+                    color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
+                }
+            }]
+        },
+        series: [{
+            type: 'column',
+            name: 'Goals',
+            data: [11, 8, 7, 6, 5, 4, 3, 3, 2, 2, 1, 1]
+        }]
+    }); 
 
 });
 
