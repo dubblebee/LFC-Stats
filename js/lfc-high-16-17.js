@@ -1,14 +1,13 @@
-
 // red: #D3171E
-// yellow: #9FD600
+// yellow: #fccb0a
 // dk green: #006E5B
 // toxic thunder: #9FD600
 // silver fleck: #CFCAC7
 // purple: #870199
 
-$(function () {
+$(function() {
 
-//Points per game
+    //Points per game
 
     $('#pts').highcharts({
         colors: ['#fccb0a', '#D3171E'],
@@ -29,8 +28,9 @@ $(function () {
             title: {
                 text: 'Points'
             },
-            max: 3
-        },        
+            max: 3,
+            min: 0
+        },
         labels: {
             items: [{
                 html: '',
@@ -46,13 +46,13 @@ $(function () {
             name: '2013-14',
             data: [3, 3, 3, 1, 0, 3, 3, 1, 3, 0, 3, 1, 0, 3, 3, 3, 3, 0, 0, 3, 3, 1, 3, 1, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 0, 1, 3]
         }, {
-            type: 'column',
+            //type: 'column',
             name: '2016-17',
-            data: [3, 0, 1, 3, 3, 3, 3, 1, 3, 3, 3, 1, 3, 0, 1, 3, 3, 3, 3, 1, 1, 0, 1, 0, 3]
+            data: [3, 0, 1, 3, 3, 3, 3, 1, 3, 3, 3, 1, 3, 0, 1, 3, 3, 3, 3, 1, 1, 0, 1, 0, 3, 0, 3, 3, 1, 3, 1, 3, 3]
         }]
     });
 
-//Total points for the season
+    //Total points for the season
 
     $('#pts-ttl').highcharts({
         colors: ['#006E5B', '#D3171E'],
@@ -61,7 +61,7 @@ $(function () {
             style: {
                 fontFamily: 'Roboto',
                 fontSize: 24
-            }            
+            }
         },
         xAxis: {
             labels: {
@@ -73,7 +73,7 @@ $(function () {
             title: {
                 text: 'Points'
             }
-        },        
+        },
         labels: {
             items: [{
                 html: 'Total Points',
@@ -91,18 +91,18 @@ $(function () {
         }, {
             type: 'column',
             name: '2016-17',
-            data: [3, 3, 4, 7, 10, 13, 16, 17, 20, 23, 26, 27, 30, 30, 31, 34, 37, 40, 43, 44, 45, 45, 46, 46, 49]
+            data: [3, 3, 4, 7, 10, 13, 16, 17, 20, 23, 26, 27, 30, 30, 31, 34, 37, 40, 43, 44, 45, 45, 46, 46, 49, 49, 52, 55, 56, 59, 60, 63, 66]
         }, {
             type: 'pie',
             name: 'Total Pts',
             data: [{
                 name: '2013-14',
                 y: 84
-                //, color: Highcharts.getOptions().colors[0] // 2013-14's color
+                    //, color: Highcharts.getOptions().colors[0] // 2013-14's color
             }, {
                 name: '2016-17',
-                y: 49
-                //, color: Highcharts.getOptions().colors[8] // 2014-15's color
+                y: 66
+                    //, color: Highcharts.getOptions().colors[8] // 2014-15's color
             }],
             center: [170, -10],
             size: 100,
@@ -113,7 +113,7 @@ $(function () {
         }]
     });
 
-//All the goals per game!!
+    //All the goals per game!!
 
     $('#goals').highcharts({
         colors: ['#9FD600', '#D3171E'],
@@ -122,7 +122,7 @@ $(function () {
             style: {
                 fontFamily: 'Roboto',
                 fontSize: 24
-            }            
+            }
         },
         xAxis: {
             labels: {
@@ -134,7 +134,7 @@ $(function () {
             title: {
                 text: 'Goals'
             }
-        },        
+        },
         labels: {
             items: [{
                 html: 'Total Goals',
@@ -152,19 +152,18 @@ $(function () {
         }, {
             type: 'column',
             name: '2016-17',
-            data: [4, 0, 1, 4, 2, 5, 2, 0, 2, 4, 6, 0, 2, 3, 2, 3, 1, 4, 1, 2, 1, 2, 1, 0, 2]
-        },
-        {
+            data: [4, 0, 1, 4, 2, 5, 2, 0, 2, 4, 6, 0, 2, 3, 2, 3, 1, 4, 1, 2, 1, 2, 1, 0, 2, 1, 3, 2, 1, 3, 2, 2, 1]
+        }, {
             type: 'pie',
             name: 'Total Goals',
             data: [{
                 name: '2013-14',
                 y: 101
-                //, color: Highcharts.getOptions().colors[0] // 2013-14's color
+                    //, color: Highcharts.getOptions().colors[0] // 2013-14's color
             }, {
                 name: '2016-17',
-                y: 54
-                //, color: Highcharts.getOptions().colors[8] // 2014-15's color
+                y: 69
+                    //, color: Highcharts.getOptions().colors[8] // 2016-17's color
             }],
             center: [170, 20],
             size: 100,
@@ -175,7 +174,7 @@ $(function () {
         }]
     });
 
-//Total goals for the season
+    //Total goals for the season
 
     $('#goals-ttl').highcharts({
         colors: ['#CFCAC7', '#D3171E'],
@@ -184,7 +183,7 @@ $(function () {
             style: {
                 fontFamily: 'Roboto',
                 fontSize: 24
-            }            
+            }
         },
         xAxis: {
             labels: {
@@ -196,7 +195,7 @@ $(function () {
             title: {
                 text: 'Points'
             }
-        },        
+        },
         labels: {
             items: [{
                 html: 'Total Goals',
@@ -214,18 +213,18 @@ $(function () {
         }, {
             type: 'column',
             name: '2016-17',
-            data: [4, 4, 5, 9, 11, 16, 18, 18, 20, 24, 30, 30, 32, 35, 37, 40, 41, 45, 46, 48, 49, 51, 52, 52, 54]
+            data: [4, 4, 5, 9, 11, 16, 18, 18, 20, 24, 30, 30, 32, 35, 37, 40, 41, 45, 46, 48, 49, 51, 52, 52, 54, 55, 58, 60, 61, 64, 66, 68, 69]
         }, {
             type: 'pie',
             name: 'Total Goals',
             data: [{
                 name: '2013-14',
                 y: 101
-                //, color: Highcharts.getOptions().colors[0] // 2013-14's color
+                    //, color: Highcharts.getOptions().colors[0] // 2013-14's color
             }, {
                 name: '2016-17',
-                y: 54
-                //, color: Highcharts.getOptions().colors[8] // 2014-15's color
+                y: 69
+                    //, color: Highcharts.getOptions().colors[8] // 2014-15's color
             }],
             center: [170, -10],
             size: 100,
@@ -236,7 +235,7 @@ $(function () {
         }]
     });
 
-//Donuts below!!
+    //Donuts below!!
 
 
     $('#wld-16-17').highcharts({
@@ -275,9 +274,9 @@ $(function () {
             name: 'Win, Lose or Draw',
             innerSize: '50%',
             data: [
-                ['Won', 14],
-                ['Lost', 4],
-                ['Drew', 7]
+                ['Won', 19],
+                ['Lost', 5],
+                ['Drew', 9]
             ]
         }]
     });
@@ -325,7 +324,7 @@ $(function () {
         }]
     });
 
-   //Top scorers
+    //Top scorers
 
     $('#plr-goals').highcharts({
         colors: ['#D3171E'],
@@ -347,7 +346,7 @@ $(function () {
                 text: 'PL Goals'
             },
             //max: 25
-        },        
+        },
         labels: {
             items: [{
                 html: '',
@@ -361,12 +360,8 @@ $(function () {
         series: [{
             type: 'column',
             name: 'Goals',
-            data: [11, 8, 7, 6, 5, 4, 3, 3, 2, 2, 1, 1]
+            data: [13, 11, 7, 7, 9, 6, 4, 5, 2, 2, 1, 1]
         }]
-    }); 
+    });
 
 });
-
-
-
-
